@@ -1,0 +1,159 @@
+/*----- Tabs ------*/
+
+.tab-content> {
+	.tab-pane {
+		display: none;
+	}
+	.active {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	.tab-content.card-body {
+		.btn {
+			min-width: 1.625rem;
+		}
+		.progress-bar {
+			display: none;
+		}
+	}
+}
+
+.tabs-menu ul li {
+	a {
+		padding: 10px 20px 11px 20px;
+	}
+	.active {
+		color: $white;
+		border-radius: 25px;
+	}
+}
+
+.tabs-menu1 ul li {
+	a {
+		padding: 10px 20px 11px 20px;
+		border-radius: 6px;
+		border: 0;
+		margin: 0 2px;
+		display: block;
+	}
+}
+
+.tabs-menu-body {
+	padding: 15px;
+	border: 1px solid $border-color;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.tab-menu-heading {
+	padding: 20px;
+	border: 1px solid $border-color;
+	border-bottom: 0;
+}
+
+.tab_wrapper {
+	.content_wrapper .tab_content.active p:last-child {
+		margin-bottom: 0;
+	}
+	>ul {
+		li {
+			border: 1px solid $border-color;
+			border-top: 3px solid $border-color;
+		}
+		border-bottom: 1px solid $border-color;
+	}
+	&.right_side {
+		.content_wrapper {
+			border: 1px solid $border-color;
+		}
+		>ul {
+			li {
+				&.active {
+					border-color: $border-color;
+				}
+				&:after {
+					background: $border-color;
+				}
+			}
+			border-bottom: 1px solid $border-color;
+		}
+	}
+}
+
+@media (min-width: 767px) {
+	.tab-content #tab-11 {
+		.item-card9-img {
+			width: 320px;
+		}
+		.item-card9-imgs img,
+		.item-card2-img img {
+			height: 197px;
+		}
+	}
+	.h-197 {
+		height: 197px;
+	}
+}
+
+#tab-11 .item-card2-img:hover a,
+#tab-12 .item-card2-img:hover a {
+	background: 0 0;
+}
+
+.tabs-menu ul.eductaional-tabs li a {
+	padding: 10px 20px 11px 20px;
+	background: #ff2b88;
+	border-radius: 23px;
+	margin: 10px;
+	color: $white;
+}
+
+@media (max-width: 480px) {
+	.tabs-menu ul.eductaional-tabs li {
+		a {
+			margin: 0;
+		}
+		width: 100% !important;
+	}
+	.tab-content .tab-pane .card-body a {
+		width: 100%;
+		display: block;
+		margin: 9px 0;
+		&.float-end {
+			float: none !important;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.tabs-menu1 ul li a {
+		display: block;
+		width: 98%;
+		border: 1px solid $border-color;
+		margin: 2px;
+		text-align: center;
+	}
+	.wideget-user-tab .tabs-menu1 ul li .active{
+		border: 1px solid $border-color !important;
+	}
+}
+.login-tabs{
+	.nav-tabs{
+		margin: 0 auto;
+		text-align: center;
+		display: inline-flex;
+		.nav-item{
+			.nav-link{
+				color:$white;
+				font-size: 16px;
+				font-weight: 400;
+				padding: 8px 30px;
+				border-radius: 8px;
+				background: rgba(255, 255, 255, 0.15);
+			}
+		}
+	}
+}

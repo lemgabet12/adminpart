@@ -1,0 +1,517 @@
+/*----- Carousel -----*/
+
+.carousel {
+	position: relative;
+}
+
+.carousel-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+#carousel-indicators .carousel-indicators {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	left: 0;
+	z-index: 15;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-left: 0;
+	margin-right: 15%;
+	margin-left: 15%;
+	list-style: none;
+	li {
+		position: relative;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		width: 5px;
+		height: 5px;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		border-radius: 50%;
+		background-color: $white-5;
+		border-radius: 50%;
+		&::before {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+		&::after {
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+	}
+	.active {
+		background-color: $white;
+	}
+}
+
+.carousel-indicators1 {
+	position: absolute;
+	right: 0;
+	top: 30px;
+	left: 0;
+	z-index: 15;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-left: 0;
+	margin-right: 15%;
+	margin-left: 15%;
+	list-style: none;
+	li {
+		position: relative;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		width: 7px;
+		height: 7px;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		background-color: $white-5;
+		border-radius: 50%;
+		&::before {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+		&::after {
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+	}
+	.active {
+		background-color: $white;
+	}
+}
+
+.carousel-indicators2 {
+	position: absolute;
+    right: 0px;
+    left: auto;
+    top: 30px;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 10px;
+    list-style: none;
+    margin-left: 5%;
+    margin-right: 5%;
+	li {
+		position: relative;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		width: 7px;
+		height: 7px;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		background-color: $white-5;
+		border-radius: 50%;
+		&::before {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+		&::after {
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+	}
+	.active {
+		background-color: $white;
+	}
+}
+
+.carousel-indicators3 {
+	position: absolute;
+	left: 0px;
+	right: auto;
+    top: 30px;
+	z-index: 15;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-left: 0;
+	margin-top: 10px;
+	list-style: none;
+	li {
+		position: relative;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		width: 7px;
+		height: 7px;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		background-color: $white-5;
+		border-radius: 50%;
+		&::before {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+		&::after {
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+	}
+	.active {
+		background-color: $white;
+	}
+}
+
+.carousel-indicators4 {
+	position: absolute;
+	right: 0px;
+    left: auto;
+	bottom: 0;
+	z-index: 15;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-left: 0;
+	margin-top: 10%;
+	list-style: none;
+	li {
+		position: relative;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		width: 7px;
+		height: 7px;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		background-color: $white-5;
+		border-radius: 50%;
+		&::before {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+		&::after {
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+	}
+	.active {
+		background-color: $white;
+	}
+}
+
+.carousel-indicators5 {
+	position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: auto;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    margin-left: 5%;
+    margin-right: 5%;
+	li {
+		position: relative;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		width: 7px;
+		height: 7px;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		background-color: $white-5;
+		border-radius: 50%;
+		&::before {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+		&::after {
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+	}
+	.active {
+		background-color: $white;
+	}
+}
+
+#carousel-captions2 .carousel-caption {
+	position: absolute;
+	right: 15%;
+	top: 30%;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: $white;
+	text-align: center;
+	background: none;
+}
+
+.carousel-item-background {
+	content: '';
+	background: $black-5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.carousel-bg {
+	.prev-icon,
+	.next-icon {
+		background-color: $black-7;
+		padding: 5px 15px;
+		border-radius: 100px;
+		font-size: 20px;
+	}
+}
+
+.carousel-control {
+	&:active,
+	&:focus,
+	&:hover {
+		color: #333;
+	}
+}
+
+#thumbcarousel, #modal-thumbcarousel {
+	.carousel-control-prev {
+		left: 0;
+		background: transparent;
+	}
+	.carousel-control-next {
+		right: 0;
+		background: transparent;
+	}
+}
+
+.carousel .carousel-indicators {
+	bottom: -1rem;
+}
+
+#carousel-indicators5, #carousel-indicators1, #carousel-indicators2, #carousel-indicators3, #carousel-indicators4, #carousel-indicators6 {
+	.carousel-indicators li {
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		margin: 1px 2px;
+		&.active {
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			margin: 1px 2px;
+			border: 5px double;
+		}
+	}
+}
+
+.carousel .carousel-control {
+	height: 40px;
+	width: 40px;
+	background: 0 0;
+	margin: auto 0;
+	border-radius: 50%;
+	background: $black-6;
+	z-index: 999;
+	i {
+		font-size: 32px;
+		position: absolute;
+		top: 1.6rem;
+		display: inline-block;
+		margin: -18px 0 0 0;
+		z-index: 5;
+		left: 0;
+		right: 0;
+		color: $white-9;
+		text-shadow: none;
+		font-weight: 700;
+		z-index: 999;
+	}
+}
+
+#carousel-controls.owl-carousel .owl-item img {
+	width: 100%;
+}
+
+#carousel-indicators5, #carousel-indicators1, #carousel-indicators2, #carousel-indicators3, #carousel-indicators4, #carousel-indicators6 {
+
+	.carousel-indicators [data-bs-target] {
+		width: 10px;
+		height: 10px;
+		margin-top: -5px;
+	}
+}
+
+#myCarousel1 {
+	#image-slider {
+		.carousel-control-prev-icon,.carousel-control-next-icon {
+			background-image:none;
+		}
+	}
+}
+
+#image-slider {
+	.carousel-control-prev-icon,.carousel-control-next-icon {
+		background-image:none;
+	}
+}
+
+#thumbcarousel {
+	.carousel-control-next i, .carousel-control-prev i {
+		background: #000;
+	}
+}
+
+.carousel-inner img {
+    border-radius: 4px;
+}
+
+ .carousel-indicators5 {
+	&.carousel-indicators {
+		margin-top: 10px !important;
+		margin-bottom: 4% !important;
+	}
+}
+
+ .carousel-indicators4 {
+	&.carousel-indicators {
+		margin-right: 5% !important;
+		margin-left: 5% !important;
+		margin-bottom: 4% !important;
+	}
+}
+
+.carousel-indicators2, .carousel-indicators5, .carousel-indicators3 {
+	&.carousel-indicators {
+		margin-right: 5% !important;
+		margin-left: 5% !important;
+	}
+}
+
+
+
+
+
+
+.carousel-indicators6 {
+	position: absolute;
+	left: 10px;
+	z-index: 15;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-left: 0;
+	margin-top: 10px;
+	list-style: none;
+	li {
+		position: relative;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		width: 7px;
+		height: 7px;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		background-color: $white-5;
+		border-radius: 50%;
+		&::before {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+		&::after {
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 10px;
+			content: "";
+		}
+	}
+	
+	.active {
+		background-color: $white;
+	}
+
+	&.carousel-indicators {
+		margin-bottom: 4% !important;
+	}
+
+}

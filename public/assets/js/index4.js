@@ -1,0 +1,72 @@
+function growth() {
+	'use strict'
+
+	var chartdata = [{
+		name: 'rents',
+		type: 'bar',
+		data: [10, 15, 9, 18, 10, 15, 22]
+	}, {
+		name: 'growth',
+		type: 'bar',
+		data: [10, 14, 10, 15, 9, 25, 16]
+	}];
+	var chart = document.getElementById('growth');
+	var barChart = echarts.init(chart);
+	var option = {
+		grid: {
+			top: '6',
+			right: '0',
+			bottom: '17',
+			left: '25',
+		},
+		xAxis: {
+			data: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
+			axisLine: {
+				lineStyle: {
+					color: 'rgba(142, 156, 173,0.1)'
+				}
+			},
+			axisLabel: {
+				fontSize: 10,
+				color: '#a7b4c9'
+			}
+		},
+		tooltip: {
+			show: true,
+			showContent: true,
+			alwaysShowContent: true,
+			triggerOn: 'mousemove',
+			trigger: 'axis',
+			axisPointer: {
+				label: {
+					show: false,
+				}
+			}
+		},
+		yAxis: {
+			splitLine: {
+				lineStyle: {
+					color: 'rgba(142, 156, 173,0.1)'
+				}
+			},
+			axisLine: {
+				lineStyle: {
+					color: 'rgba(142, 156, 173,0.1)'
+				}
+			},
+			axisLabel: {
+				fontSize: 10,
+				color: '#a7b4c9'
+			}
+		},
+		series: chartdata,
+		color: [myVarVal, '#f46a6a'],
+		barMaxWidth: 10
+	};
+
+	barChart.setOption(option);
+	window.addEventListener('resize',function(){
+	  barChart.resize();
+	})
+
+}
